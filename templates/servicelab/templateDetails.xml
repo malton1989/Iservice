@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.5" type="template" client="site">
+	<name>Service lab</name>
+	<creationDate>12 March 2018</creationDate>
+	<author>Anton Malyamov</author>
+	<authorEmail>tosha.malyamov@yandex.ru</authorEmail>
+	<authorUrl>http://vk.com/saliam_maliam</authorUrl>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>comercial</license>
+	<version>1.0</version>
+	<description>Template for CMS Joomla 3</description>
+
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+
+	<positions>
+		<position>breadcrumbs</position>
+		<position>sidebar</position>
+		<position>menu</position>
+		<position>karta</position>
+		<position>Slider</position>
+		<position>Nijnii_blok_info</position>
+		<position>Footer</position>
+		<position>button1</position>
+		<position>button2</position>
+		<position>button3</position>
+		<position>button4</position>
+		<position>forma</position>
+		
+	</positions>
+</extension>

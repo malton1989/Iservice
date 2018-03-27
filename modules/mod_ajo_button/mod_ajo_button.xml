@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.4"
+	client="site"
+	method="upgrade">
+	<name>MOD_AJO_BUTTON</name>
+	<author>Danny Buytaert</author>
+	<creationDate>Juni 2016</creationDate>
+	<copyright>Copyright (C) 2016 Danny Buytaert. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 2 or later
+	</license>
+	<authorEmail>danny@freakout.be</authorEmail>
+	<authorUrl>www.freakout.be</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_AJO_BUTTON_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_ajo_button">mod_ajo_button.php</filename>
+		<folder>tmpl</folder>
+		<folder>fields</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+		<filename>mod_ajo_button.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset
+				name="basic"
+				addfieldpath="/modules/mod_ajo_button/fields">
+				<field
+					name="bootstrapVersion"
+					type="radio"
+					class="btn-group"
+					default="3"
+					label="MOD_AJO_BUTTON_BOOTSTRAPVERSION_LABEL"
+					description="MOD_AJO_BUTTON_BOOTSTRAPVERSION_DESC">
+					<option value="2">MOD_AJO_BUTTON_BOOTSTRAPVERSION_2</option>
+					<option value="3">MOD_AJO_BUTTON_BOOTSTRAPVERSION_3</option>
+				</field>
+				<field
+					name="contentPosition"
+					type="radio"
+					class="btn-group"
+					default="text-center"
+					label="MOD_AJO_BUTTON_CONTENTPOSITION_LABEL"
+					description="MOD_AJO_BUTTON_CONTENTPOSITION_DESC">
+					<option value="text-left">MOD_AJO_BUTTON_CONTENTPOSITION_LEFT</option>
+					<option value="text-center">MOD_AJO_BUTTON_CONTENTPOSITION_CENTER</option>
+					<option value="text-right">MOD_AJO_BUTTON_CONTENTPOSITION_RIGHT</option>
+				</field>
+				<field
+					type="spacerplus"
+					name="spacerLink"
+					label="MOD_AJO_BUTTON_LINK_LABEL"
+					description="MOD_AJO_BUTTON_LINK_DESC"
+					hr="false"
+					class=""
+					icon="icon-link"
+					tooltip="false" />
+				<field
+					name="linkMenu"
+					type="menuitem"
+					default=""
+					state="1"
+					label="MOD_AJO_BUTTON_LINKMENU_LABEL"
+					description="MOD_AJO_BUTTON_LINKMENU_DESC">
+					<option value="">MOD_AJO_BUTTON_NO_MENU_USE_LINK</option>
+				</field>
+				<field
+					name="linkUrl"
+					type="url"
+					default=""
+					label="MOD_AJO_BUTTON_LINKURL_LABEL"
+					description="MOD_AJO_BUTTON_LINKURL_DESC" />
+				<field
+					name="onClick"
+					type="text"
+					default=""
+					label="MOD_AJO_BUTTON_ONCLICK_LABEL"
+					description="MOD_AJO_BUTTON_ONCLICK_DESC" />
+				<field
+					type="spacerplus"
+					name="spacerButton"
+					icon="icon-radio-unchecked"
+					label="MOD_AJO_BUTTON_BUTTON_LABEL"
+					description="MOD_AJO_BUTTON_BUTTON_DESC"
+					hr="top" />
+				<field
+					name="buttonText"
+					type="text"
+					label="MOD_AJO_BUTTON_BUTTONTEXT_LABEL"
+					description="MOD_AJO_BUTTON_BUTTONTEXT_DESC" />
+				<field
+					name="buttonStyle"
+					type="list"
+					default=""
+					label="MOD_AJO_BUTTON_BUTTONSTYLE_LABEL"
+					description="MOD_AJO_BUTTON_BUTTONSTYLE_DESC">
+					<option value="">Default</option>
+					<option value="btn-primary">Primary</option>
+					<option value="btn-success">Success</option>
+					<option value="btn-info">Info</option>
+					<option value="btn-warning">Warning</option>
+					<option value="btn-danger">Danger</option>
+					<option value="btn-link">Link</option>
+				</field>
+				<field
+					name="buttonSize"
+					type="list"
+					default=""
+					label="MOD_AJO_BUTTON_BUTTONSIZE_LABEL"
+					description="MOD_AJO_BUTTON_BUTTONSIZE_DESC">
+					<option value="btn-lg">Large button</option>
+					<option value="">Default button</option>
+					<option value="btn-sm">Small button</option>
+					<option value="btn-xs">Extra small button</option>
+				</field>
+				<field
+					name="buttonBlock"
+					type="radio"
+					class="btn-group"
+					default=""
+					label="MOD_AJO_BUTTON_BUTTONBLOCK_LABEL"
+					description="MOD_AJO_BUTTON_BUTTONBLOCK_DESC">
+					<option value="btn-block">JYES</option>
+					<option value="">JNO</option>
+				</field>
+				<field
+					name="buttonClass"
+					type="text"
+					default=""
+					label="MOD_AJO_BUTTON_BUTTONCLASS_LABEL"
+					description="MOD_AJO_BUTTON_BUTTONCLASS_DESC" />
+				<field
+					type="spacerplus"
+					name="spacerIcon"
+					label="MOD_AJO_BUTTON_ICON_LABEL"
+					description="MOD_AJO_BUTTON_ICON_DESC"
+					hr="top"
+					icon="icon-radio-checked" />
+				<field
+					name="iconClass"
+					type="text"
+					default=""
+					label="MOD_AJO_BUTTON_ICONCLASS_LABEL"
+					description="MOD_AJO_BUTTON_ICONCLASS_DESC" />
+				<field
+					name="iconPosition"
+					type="radio"
+					class="btn-group"
+					default="button"
+					label="MOD_AJO_BUTTON_ICONPOSITION_LABEL"
+					description="MOD_AJO_BUTTON_ICONPOSITION_DESC">
+					<option value="buttonleft">MOD_AJO_BUTTON_ICONPOSITION_BUTTONLEFT
+					</option>
+					<option value="buttonright">MOD_AJO_BUTTON_ICONPOSITION_BUTTONRIGHT
+					</option>
+					<option value="top">MOD_AJO_BUTTON_ICONPOSITION_TOP</option>
+					<option value="">JHIDE</option>
+				</field>
+				<field
+					name="loadIconfont"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_AJO_BUTTON_LOADICONFONT_LABEL"
+					description="MOD_AJO_BUTTON_LOADICONFONT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					type="spacerplus"
+					tooltip="true"
+					name="spacerText"
+					icon="icon-pencil-2"
+					label="MOD_AJO_BUTTON_OPTIONALTEXT_LABEL"
+					description=""
+					hr="top" />
+				<field
+					name="preTitle"
+					type="text"
+					default=""
+					label="MOD_AJO_BUTTON_PRETITLE_LABEL"
+					description="MOD_AJO_BUTTON_PRETITLE_DESC" />
+				<field
+					name="preText"
+					type="textarea"
+					default=""
+					label="MOD_AJO_BUTTON_PRETEXT_LABEL"
+					description="MOD_AJO_BUTTON_PRETEXT_DESC"
+					rows="5"
+					cols="40"
+					filter="raw" />
+				<field
+					name="afterTitle"
+					type="text"
+					default=""
+					label="MOD_AJO_BUTTON_AFTERTITLE_LABEL"
+					description="MOD_AJO_BUTTON_AFTERTITLE_DESC" />
+				<field
+					name="afterText"
+					type="textarea"
+					default=""
+					label="MOD_AJO_BUTTON_AFTERTEXT_LABEL"
+					description="MOD_AJO_BUTTON_AFTERTEXT_DESC"
+					rows="5"
+					cols="40"
+					filter="raw" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+		<updateservers>
+		<server type="extension" priority="1" name="mod_ajo_button">http://www.joomlafreak.be/updates/mod_ajo_button.xml
+		</server>
+	</updateservers>
+</extension>
