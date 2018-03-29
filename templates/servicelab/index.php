@@ -12,10 +12,13 @@ JHtml::_('jquery.framework');
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 <jdoc:include type="head" />
+
+
 <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
         jQuery.noConflict();
 </script>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/myscript.js"></script>
 <link href="templates/<?php echo $this->template ?>/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 <link href="templates/<?php echo $this->template ?>/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -162,7 +165,7 @@ JHtml::_('jquery.framework');
 
 
 <?php if($this->countModules('Nijnii_blok_info')) : ?>
-<div class="container">
+<div class="container" class="nigniiBlok">
 
     <div class="row">
 
