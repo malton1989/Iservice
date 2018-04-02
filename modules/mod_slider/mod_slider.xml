@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>Slider</name>
+	<creationDate>12 March 2018</creationDate>
+	<author>Anton Malyamov</author>
+	<authorEmail>tosha.malyamov@yandex.ru</authorEmail>
+	<authorUrl>http://vk.com/saliam_maliam</authorUrl>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>Gnu</license>
+	<version>1.0</version>
+	<description>slider for CMS Joomla 3</description>
+
+	<files>
+		<filename module="mod_slider">mod_slider.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="img_1" type="media" default="" label="Картинка1" description="" size="20">
+				</field>
+				<field name="link_1" type="media" default="" label="Сcылка 1" description="" size="60">
+				</field>
+				<field name="text_1" type="media" default="" label="Текст 1" description="" size="60">
+				</field>
+				<field type="spacer" br="true">
+				</field>
+	
+				<field name="img_2" type="media" default="" label="Картинка 2" description="" size="20"></field>
+				<field name="link_2" type="media" default="" label="Сcылка 2" description="" size="60"></field>
+				<field name="text_2" type="media" default="" label="Текст 2" description="" size="60"></field>
+				<field type="spacer" br="true"></field>
+	
+				<field name="img_3" type="media" default="" label="Картинка 3" description="" size="20"></field>
+				<field name="link_3" type="media" default="" label="Сcылка 3" description="" size="60"></field>
+				<field name="text_3" type="media" default="" label="Текст 3" description="" size="60"></field>
+				<field type="spacer" br="true"></field>
+			</fieldset>
+			<fieldset name="advanced">
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

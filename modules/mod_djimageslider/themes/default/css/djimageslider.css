@@ -159,5 +159,5 @@ ul.djslider-in > li {
 }
 .djslider-loader-default:hover .showOnHover,
 .djslider-loader-default.focused .showOnHover {
-	opacity: 1;
+	opacity: 0.2;
 }

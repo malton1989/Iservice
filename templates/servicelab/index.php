@@ -108,7 +108,9 @@ JHtml::_('jquery.framework');
 <!-- slider -->
 <?php if($this->countModules('slider')) : ?>
 <div class="container" id="slider">
+
 	<jdoc:include type="modules" name="slider" style="none"/>
+	
 </div>
 <?php endif;?>
 <!-- slider end -->
